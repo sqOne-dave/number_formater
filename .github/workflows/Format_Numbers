@@ -1,0 +1,23 @@
+#Developer: David Simon Kasek
+#Tool Name:Format_Numbers
+#Version: 0.1
+#Collection: Tools and more
+
+some_text="💞Hallo Tanja, ich liebe dich💞"
+
+def one_world(some_input):
+    c = 0
+    c_literal= ""
+    for x in some_input:
+        c_string = str(c)
+        print("C_String: ",c_string," Type: ",type(c_string))
+        c_length = len(c_string)
+        if  c_length < 2  :
+            c_string = ("0" + c_string)
+            #Prints a String with some input and an leading number
+            print(c_string,". ",some_input)
+            
+        else:
+            print(c,". ",some_input)
+        c += 1
+one_world(some_text)
